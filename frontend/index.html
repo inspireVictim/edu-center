@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCenter — Образовательный центр в Бишкеке</title>
+    <meta name="description" content="Современный образовательный центр: программирование, языки, дизайн, подготовка к ОРТ. Запишитесь на курс через форму обратной связи.">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">
+                <span class="logo__mark">EC</span>
+                <span class="logo__text">EduCenter</span>
+            </a>
+            <nav class="nav">
+                <a href="#about" class="nav__link">О нас</a>
+                <a href="#courses" class="nav__link">Курсы</a>
+                <a href="#teachers" class="nav__link">Преподаватели</a>
+                <a href="#feedback" class="nav__link">Контакты</a>
+            </nav>
+            <a href="#feedback" class="btn btn--primary btn--small">Записаться</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <span class="hero__eyebrow">Образовательный центр в Бишкеке</span>
+                <h1 class="hero__title">
+                    Учитесь у тех, кто работает в индустрии
+                </h1>
+                <p class="hero__lead">
+                    Программирование, иностранные языки, дизайн и подготовка к ОРТ —
+                    короткие практические курсы с трудоустройством и реальными проектами.
+                </p>
+                <div class="hero__actions">
+                    <a href="#courses" class="btn btn--primary">Смотреть курсы</a>
+                    <a href="#feedback" class="btn btn--ghost">Получить консультацию</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat"><div class="stat__num">2500+</div><div class="stat__label">выпускников</div></div>
+                    <div class="stat"><div class="stat__num">82%</div><div class="stat__label">трудоустройства</div></div>
+                    <div class="stat"><div class="stat__num">15</div><div class="stat__label">направлений</div></div>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__card hero__card--1">📘 Python · от основ до production</div>
+                <div class="hero__card hero__card--2">🌐 IELTS — гарантия 7.0+</div>
+                <div class="hero__card hero__card--3">🎨 UX/UI · 4 проекта в портфолио</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--soft" id="about">
+        <div class="container">
+            <div class="section__head">
+                <span class="eyebrow">О центре</span>
+                <h2>Делаем образование практичным и доступным</h2>
+                <p class="lead">
+                    EduCenter — это команда практикующих специалистов и методистов, объединённая
+                    общим подходом: знания должны сразу превращаться в навык. Каждый курс — это
+                    проект-портфолио или сертификат, который можно показать работодателю.
+                </p>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature__icon">🎯</div>
+                    <h3>Практические проекты</h3>
+                    <p>В конце курса — готовое портфолио и навык, который проверяется на интервью.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">👥</div>
+                    <h3>Малые группы</h3>
+                    <p>До 12 человек в группе. Преподаватель видит каждого студента и его прогресс.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">💼</div>
+                    <h3>Карьерная поддержка</h3>
+                    <p>Помогаем составить резюме и подготовиться к собеседованиям.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">📅</div>
+                    <h3>Гибкое расписание</h3>
+                    <p>Утренние, вечерние и онлайн-группы — выбирайте удобный формат.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="section" id="courses">
+        <div class="container">
+            <div class="section__head">
+                <span class="eyebrow">Каталог программ</span>
+                <h2>Наши курсы</h2>
+                <p class="lead">
+                    Выберите направление и формат — мы поможем подобрать программу
+                    под ваш уровень и цели.
+                </p>
+            </div>
+
+            <div class="filter-pills" id="filter-pills">
+                <button class="pill is-active" data-cat="">Все направления</button>
+            </div>
+
+            <div class="courses-grid" id="courses-grid">
+                <div class="skeleton">Загрузка каталога…</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEACHERS -->
+    <section class="section section--soft" id="teachers">
+        <div class="container">
+            <div class="section__head">
+                <span class="eyebrow">Команда</span>
+                <h2>Преподаватели</h2>
+                <p class="lead">Эксперты с опытом работы в индустрии и педагогическим стажем.</p>
+            </div>
+
+            <div class="teachers-grid" id="teachers-grid">
+                <div class="skeleton">Загрузка состава…</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEEDBACK FORM -->
+    <section class="section feedback" id="feedback">
+        <div class="container feedback__inner">
+            <div class="feedback__left">
+                <span class="eyebrow eyebrow--light">Форма обратной связи</span>
+                <h2>Оставьте заявку — мы перезвоним</h2>
+                <p class="lead lead--light">
+                    Расскажем подробнее о курсе, поможем определить уровень
+                    и подобрать ближайший набор. Без спама.
+                </p>
+
+                <ul class="feedback__contacts">
+                    <li><span>📍</span> Бишкек, ул. Чуй, 154, офис 18</li>
+                    <li><span>📞</span> <a href="tel:+996770123456">+996 (770) 123-456</a></li>
+                    <li><span>✉️</span> <a href="mailto:hello@edu.kg">hello@edu.kg</a></li>
+                    <li><span>🕘</span> Пн–Сб, 09:00 – 20:00</li>
+                </ul>
+            </div>
+
+            <form class="feedback__form card" id="feedback-form" novalidate>
+                <h3 class="feedback__title">Записаться на курс</h3>
+
+                <label class="field">
+                    <span class="field__label">Имя и фамилия *</span>
+                    <input name="full_name" type="text" required minlength="2" autocomplete="name" placeholder="Ваше имя">
+                    <span class="field__error" data-error-for="full_name"></span>
+                </label>
+
+                <label class="field">
+                    <span class="field__label">Телефон *</span>
+                    <input name="phone" type="tel" required placeholder="+996 555 000 111" autocomplete="tel">
+                    <span class="field__error" data-error-for="phone"></span>
+                </label>
+
+                <label class="field">
+                    <span class="field__label">Email *</span>
+                    <input name="email" type="email" required placeholder="you@example.com" autocomplete="email">
+                    <span class="field__error" data-error-for="email"></span>
+                </label>
+
+                <label class="field">
+                    <span class="field__label">Курс</span>
+                    <select name="course_id" id="form-course-select">
+                        <option value="">— выберите направление —</option>
+                    </select>
+                </label>
+
+                <label class="field">
+                    <span class="field__label">Комментарий</span>
+                    <textarea name="message" rows="3" placeholder="Уточните формат, удобное время, ваш уровень…"></textarea>
+                </label>
+
+                <!-- honeypot — спрятан CSS-ом, заполняется ботами -->
+                <label class="hp" aria-hidden="true">
+                    Сайт <input name="website" tabindex="-1" autocomplete="off">
+                </label>
+
+                <button type="submit" class="btn btn--primary btn--block btn--lg" id="submit-btn">
+                    <span class="btn__label">Отправить заявку</span>
+                    <span class="btn__spinner" aria-hidden="true"></span>
+                </button>
+
+                <p class="feedback__legal">
+                    Нажимая кнопку, вы соглашаетесь на обработку персональных данных.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <div class="logo logo--light">
+                    <span class="logo__mark">EC</span>
+                    <span class="logo__text">EduCenter</span>
+                </div>
+                <p>Образовательный центр в Бишкеке. Курсы программирования, языков, дизайна и подготовки к ОРТ.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Навигация</h4>
+                <a href="#about">О нас</a>
+                <a href="#courses">Курсы</a>
+                <a href="#teachers">Преподаватели</a>
+                <a href="#feedback">Контакты</a>
+            </div>
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <p>Бишкек, ул. Чуй, 154</p>
+                <p>+996 (770) 123-456</p>
+                <p>hello@edu.kg</p>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            © 2026 EduCenter. Все права защищены.
+        </div>
+    </footer>
+
+    <!-- TOAST / MODAL CONFIRMATION -->
+    <div class="modal-overlay" id="success-modal" hidden>
+        <div class="modal">
+            <div class="modal__icon">✓</div>
+            <h3>Заявка отправлена!</h3>
+            <p id="success-message">Менеджер свяжется с вами в течение рабочего дня.</p>
+            <button class="btn btn--primary" id="modal-close">Хорошо</button>
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
